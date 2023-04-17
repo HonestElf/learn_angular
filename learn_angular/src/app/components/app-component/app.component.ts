@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import type { IProduct } from './models/product';
+import type { IProduct } from '../../models/product';
 
-import { products as data } from './data/products';
-import { ProductsService } from './services/products.service';
+import { products as data } from '../../data/products';
+import { ProductsService } from '../../services/products.service';
 import { Observable, tap } from 'rxjs';
 
 @Component({
