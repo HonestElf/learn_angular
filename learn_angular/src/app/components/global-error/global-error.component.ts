@@ -5,12 +5,10 @@ import { ErrorService } from 'src/app/services/error.service';
   selector: 'app-global-error',
   templateUrl: './global-error.component.html',
   styleUrls: ['./global-error.component.scss'],
+  // providers: [ErrorService],
 })
 export class GlobalErrorComponent implements OnInit {
-  errorService: ErrorService;
-  constructor(errorService: ErrorService) {
-    this.errorService = errorService;
-  }
+  constructor(public errorService: ErrorService) {}
 
   title = 'aaaaa';
 
